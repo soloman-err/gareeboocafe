@@ -17,7 +17,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: async () => {
+          const res = await fetch(`https://www.themealdb.com/api/json/v1/1/categories.php`);
+          return await res.json();
+        }
       },
       {
         path: 'cart',
