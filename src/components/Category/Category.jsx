@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Category = ({ meal }) => {
     const { idCategory, strCategory, strCategoryDescription, strCategoryThumb } = meal;
@@ -9,7 +10,7 @@ const Category = ({ meal }) => {
                 <div className=''>
                     <h1 className='font-bold text-xl bg-cyan-100 px-1'>{strCategory}</h1>
                     <p className='text-slate-600 py-2'>{strCategoryDescription.substring(0, 100)}..
-                        <button className='text-cyan-700'>Read more</button>
+                        <Link to='/meal-detail'><button className='text-cyan-700'>Read more</button></Link>
                     </p>
                 </div>
             </div>

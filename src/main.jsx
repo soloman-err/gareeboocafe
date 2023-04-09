@@ -6,6 +6,7 @@ import Blog from './components/Blog/Blog'
 import Cart from './components/Cart/Cart'
 import Contact from './components/Contact/Contact'
 import Home from './components/Home/Home'
+import MealDetail from './components/MealDetail/MealDetail'
 import RootLayout from './components/RootLayout/RootLayout'
 import './index.css'
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About></About>
+      },
+      {
+        path: 'meal-detail',
+        element: <MealDetail></MealDetail>
       }
     ]
   }

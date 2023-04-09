@@ -6,7 +6,7 @@ import { faHamburger, faX } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
     const [open, setOpen] = useState(false);
     return (
-        <nav className='flex flex-row-reverse md:flex-row justify-between bg-cyan-600 py-5 px-6 lg:px-36 font-bold md:text-xl text-white items-center'>
+        <nav className='flex flex-row-reverse md:flex-row justify-between bg-cyan-600 py-5 px-6 lg:px-36 font-bold text-white items-center'>
             <div className=''>
                 <h1 className='font-extrabold md:text-2xl uppercase'>gareeboocafe</h1>
             </div>
