@@ -4,10 +4,6 @@ import { Player, Controls } from '@lottiefiles/react-lottie-player';
 const About = () => {
     return (
         <div className='text-center my-20'>
-            <img className='w-32 mx-auto my-5' src="/cafe-ceo.png" alt="" />
-            <h1 className='text-xl font-bold uppercase text-slate-600 underline'>About us</h1>
-            <small className='text-slate-500 my-5'><span className='font-bold'>Gareeboocafe</span> is one of the most gareeb cafe in the south-east sky.</small>
-
             <div>
                 <Player
                     autoplay
@@ -18,6 +14,7 @@ const About = () => {
                     <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
                 </Player>
             </div>
+            <small className='text-slate-500 my-5'><span className='font-bold'>Gareeboocafe</span> is one of the most gareeb cafe in the south-east space.</small>
         </div>
     );
 };
