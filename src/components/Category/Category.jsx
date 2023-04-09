@@ -6,7 +6,7 @@ const Category = ({ meal }) => {
     return (
         <div className='flex flex-col justify-between bg-cyan-100 border border-cyan-300 rounded-md shadow-sm px-5 py-3'>
             <div>
-                <img className='w-[50%] mx-auto' src={strCategoryThumb} alt="" />
+                <img className='w-[80%] mx-auto' src={strCategoryThumb} alt="" />
                 <div className=''>
                     <h1 className='font-bold text-xl bg-cyan-100 px-1'>{strCategory}</h1>
                     <p className='text-slate-600 py-2'>{strCategoryDescription.substring(0, 100)}..
